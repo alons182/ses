@@ -20,7 +20,7 @@ get_header(); ?>
 	
 </div>
 
- <div class="inner">
+ <div class="inner overflow-hidden">
 	
 		
 		<article class="site-main" role="main">
