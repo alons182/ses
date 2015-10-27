@@ -1,0 +1,534 @@
+@import "nib"
+@import "normalize.styl"
+@import "icons.styl"
+
+
+gris = #5b5b5b
+gris2 = #2B313B
+naranja = #F57F2D
+lima = #D6E591
+azul = #1B7EBE
+celeste = #01a9e8
+verde = #589e00
+verde2 = #0BAA5D
+morado = #65007a
+amarillo = #efb900
+
+
+
+body
+	font-family 'Open Sans', sans-serif;
+	font-size 80%
+	font-weight 400
+	line-height 30px
+	color #707070
+
+*
+	box-sizing border-box
+
+ul
+	margin 0
+	padding 0
+	
+
+a
+	text-decoration none
+
+h1
+h2
+h3
+h4
+h5
+	font-weight 400
+	margin-top 0
+	//font-family 'verdana', serif
+
+
+img
+	max-width 100%
+	height auto
+
+.right
+	right 0
+.left
+	left 0
+.txt-center
+	text-align center
+.white 
+	color white
+.bg-naranja
+	background-color naranja
+.bg-azul
+	background-color azul
+.bg-morado
+	background-color morado
+.bg-verde
+	background-color verde2
+.bg-amarillo
+	background-color amarillo
+.btn
+.wpcf7-submit	 
+	display inline-block
+	color gris
+	padding .8rem
+	text-align center
+	border-radius 5px
+	text-transform uppercase
+.btn-white
+	background-color white		
+.inner
+	max-width 1186px
+	margin 0 auto
+	position relative
+	padding-left 1.2rem
+	padding-right 1.2rem
+	overflow hidden
+
+.top 
+	background-color gris2
+	position absolute
+	left 0
+	right 0
+	height 44px
+	display none
+	z-index 999
+	
+	&__info
+	&__social
+		display inline-block
+		float right
+		line-height 44px
+		&__link
+			color gris2
+			padding	 .5rem
+			color white		
+			&:hover
+				color white						
+														
+		
+	&__info
+		margin-right .8rem
+		color white
+.header
+	background-color white
+	text-align center
+	position relative
+	left 0 
+	right 0
+	z-index: 9999
+	&__logo
+		display block
+		padding-top .5rem
+		width: 170px
+		margin 0 auto
+	&__btn-menu
+		position absolute
+		left 15px
+		top 100px
+		background-color transparent
+		border 0
+		color white
+		font-size 2.5rem
+		outline 0
+		
+		&--active
+			//color white
+			i:before
+				content "\f00d"	
+	&__menu
+		background-color lima
+		position absolute
+		left 0
+		right 0
+		top 155px
+		display none
+		
+		
+		
+		&__item
+		.menu-item
+			display block
+			margin 0 1rem
+		&__link
+		a	
+			display block
+			padding .5rem
+			color white
+			text-transform uppercase			
+@media screen and (min-width:768px)
+	body
+		font-size 100%
+	.header
+		position relative
+		&__logo
+			padding-top 1rem
+			padding-bottom 1rem
+		&__btn-menu
+			display none
+		&__menu 
+			display block !important
+			position static
+			background-color transparent
+			margin .8rem 0
+			
+			&__item
+			.menu-item	 
+				display inline-block
+				
+			&__link
+			a	
+				color gris
+				
+				&:hover
+					color lima
+	
+@media screen and (min-width:1200px)
+	.inner 
+		padding-left 0
+		padding-right 0
+	.top 
+		display block
+		
+	.header
+		position absolute
+		top 44px
+		height 72px
+		text-align left
+		&--fixed
+			position fixed
+			top 0
+			box-shadow 1px 1px 5px rgba(0, 0, 0, .25)	
+		&__logo
+			display inline-block
+			vertical-align top
+			padding-top	5px
+			padding-bottom 5px
+			margin-right 2rem
+			width: 125px
+		&__menu
+			display inline-block !important
+			vertical-align top
+			//margin-top 2rem		
+
+.main 
+	padding-top 0px
+	
+	&__slider
+		width 100%
+		&__slide
+			position relative
+			width 100%
+			height 200px
+			background-size cover
+			background-position center center
+			background-repeat no-repeat
+			&__info
+				padding-top 4rem
+				padding-left 1.5rem
+				padding-right 1.5rem	
+				position absolute
+				h1 
+					color celeste
+					font-weight	700
+					text-shadow 1px 1px 2px rgba(0, 0, 0, .75)
+				h4 
+					text-shadow 1px 1px 2px rgba(0, 0, 0, .75)
+				figure
+					float left
+					margin-right 1rem
+				&--right 
+					right 0
+				&--left 
+					left 0
+	&__featured
+		margin-top 2rem
+		margin-bottom 2rem
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		position relative
+		z-index 999
+		&__item 
+			width 100%
+			margin-bottom 1.5rem
+			box-shadow 0px 1px 5px rgba(0, 0, 0, .75)
+		
+			&__link
+				display block
+				position relative
+				text-align center
+				color white
+				transition all .5s ease-in
+				
+				&:hover
+					.main__featured__item__caption
+						top -65px
+					
+					.main__featured__item__description
+						opacity 0	
+						
+			&__figure
+				height 400px
+				background-color #000
+				overflow hidden
+				position relative
+			&__img
+				position relative
+				display block
+				height 360px
+				width 100%
+				margin-top 44px
+				background-position 50% 0
+				background-size cover
+				background-repeat no-repeat
+			&__caption
+				color white
+				position absolute
+				top 0
+				border-top 5px solid gris2
+				width 100%
+				padding 1rem
+				transition all .5s ease
+				
+			&__title
+				text-transform uppercase
+				margin-bottom 5px
+				
+			
+			&__description
+				margin 0
+				line-height	24px
+				transition all .5s ease		
+	&__more
+	&__contact
+		background-color lima
+		padding-top 2rem
+		padding-bottom 2rem
+		text-align center
+		position relative
+		&__title 
+			color white
+					
+	&__more
+		
+		&__bg 
+			width 100%
+			height 100%
+			position absolute
+			left 0
+			top 0
+			background-size cover
+			background-repeat no-repeat
+			background-position 50% 50%
+			background-attachment fixed
+		&__info 
+			position relative
+		&__button
+			&:hover
+				background-color lima
+				color white
+
+	
+
+@media screen and (min-width:768px)
+	.main 
+		&__slider
+			&__slide 
+				height 423px
+				
+				&__info
+					width 50%
+					h1
+						font-size 3rem
+					h4
+						font-size 1.4rem	
+		&__featured
+			margin-top -1.8rem
+						
+			&__item 
+				width 45%
+		&__more
+		&__contact
+			
+			padding-top 4rem
+			padding-bottom 4rem
+			
+			&__title 
+				font-size 2.5rem
+		&__more
+			padding-top 8rem
+			padding-bottom 8rem
+
+@media screen and (min-width:1200px)
+	.main 
+		padding-top	116px
+		&__slider
+			&__slide 
+				height 562px
+				&__info
+					padding-top 10rem
+					
+		&__featured
+				margin-top -1.8rem
+							
+				&__item 
+					width 23%
+		&__contact
+			padding-top 5rem
+			padding-bottom 5rem
+			&__title
+				float left									
+
+@media screen and (min-width:1400px)
+	.main 
+		&__slider
+			&__slide 
+				height 793px
+				
+				&__info
+					
+					width 60%
+					
+					line-height	45px
+					h1
+						font-size 3.9rem
+					h4
+						font-size 1.9rem						
+
+
+.site-main
+.site-sidebar
+	width 100%
+	float left
+	padding-top 1.5rem
+	padding-bottom 1.5rem 
+.widget-title
+	border-bottom 5px solid verde2
+	padding-bottom .5rem
+.page-title
+	background-color #D2E497
+	.entry-title
+		font-size 2rem
+		text-transform uppercase
+		margin 0
+		padding 44px 0
+		word-break break-all
+		color #1E3131
+		text-align center
+input[type="text"]
+input[type="email"]
+input[type="url"]		
+textarea	
+	background rgba(0,0,0,0.04)
+	border rgba(0,0,0,0.07) 1px solid
+	color rgba(0,0,0,0.47)
+	padding 11px 22px
+	font-size 14px
+	white-space normal
+	border-radius 3px
+	max-width 100%
+	box-sizing border-box
+	-webkit-appearance none
+	width 100%
+.wpcf7-submit
+	background-color lima
+	color #000
+	border none
+	&:hover
+		background-color verde2
+		color white
+				
+
+@media screen and (min-width:1000px)
+	.site-main
+		width 66.66%
+	.site-sidebar
+		width 25%
+		margin-left: 8.333333333333332%;
+	.page-title
+		.entry-title
+			font-size 3rem
+			text-align left
+
+.footer
+	background-color #000
+	&__social
+		text-align center
+		padding 1rem
+		&__item 
+			display inline-block
+			margin .5rem .2rem
+		&__info 
+			display none	
+		
+		&__link
+			display inline-block
+			background-color gris2
+			width 87px 
+			height 87px
+			border-radius 50%
+			color white
+			text-align center
+			font-size 2.5rem
+			padding 1.5rem
+			&:hover
+				background-color white
+				color gris2		
+			
+	&__copyright
+		background-color gris2
+		color gris
+		text-align center
+		padding 1rem
+		&__avotz
+			a 
+				color white
+				display block
+				i 
+					font-size 3rem
+					display inline-block
+					vertical-align middle
+			
+			
+	&__menu
+		text-align center
+		&__item
+		.menu-item	
+			display inline-block
+		&__link
+		a	
+			display block
+			padding .5rem
+			color white
+			&:hover
+				color gris		
+				
+			
+@media screen and (min-width:900px)
+	.footer
+		&__social
+			padding 2rem
+			&__info
+				display block
+				font-size .7rem
+			&__item
+				margin 0 1rem					
+		&__menu 
+			&__link
+			a	
+				font-size .7rem
+		
+		&__copyright
+			position relative
+			padding 0
+			&__avotz
+				position absolute
+				right 1.2rem
+				top 8px
+				font-size .6rem
+				
+				a 
+					i 
+						font-size 2rem	
+			
+					
