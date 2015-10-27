@@ -250,18 +250,17 @@ input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-sea
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
-@font-face{font-family:camaleon;src:url(./fonts/camaleon.eot?y13uph);src:url(./fonts/camaleon.eot?#iefixy13uph) format('embedded-opentype'),url(./fonts/camaleon.woff?y13uph) format('woff'),url(./fonts/camaleon.ttf?y13uph) format('truetype'),url(./fonts/camaleon.svg?y13uph#camaleon) format('svg');font-weight:400;font-style:normal}
-[class*=" icon-"],[class^=icon-]{font-family:camaleon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:icomoon;src:url(./fonts/icomoon.eot?odefms);src:url(./fonts/icomoon.eot?odefms#iefix) format('embedded-opentype'),url(./fonts/icomoon.ttf?odefms) format('truetype'),url(./fonts/icomoon.woff?odefms) format('woff'),url(./fonts/icomoon.svg?odefms#icomoon) format('svg');font-weight:400;font-style:normal}
+[class*=" icon-"],[class^=icon-]{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-avotz:before{content:"\e600"}
-.icon-search:before{content:"\f002"}
-.icon-close:before{content:"\f00d"}
+.icon-home:before{content:"\f015"}
+.icon-phone:before{content:"\f095"}
 .icon-twitter:before{content:"\f099"}
-.icon-facebook:before{content:"\f09a"}
-.icon-menu:before{content:"\f0c9"}
+.icon-facebook-f:before,.icon-facebook:before{content:"\f09a"}
+.icon-globe:before{content:"\f0ac"}
+.icon-bars:before,.icon-menu:before,.icon-navicon:before,.icon-reorder:before{content:"\f0c9"}
 .icon-google-plus:before{content:"\f0d5"}
 .icon-envelope:before{content:"\f0e0"}
-.icon-angle-left:before{content:"\f104"}
-.icon-angle-right:before{content:"\f105"}
 .icon-youtube:before{content:"\f167"}
 body{font-family:'Open Sans',sans-serif;font-size:80%;font-weight:400;line-height:30px;color:#707070}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
