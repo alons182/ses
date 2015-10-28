@@ -691,9 +691,11 @@ img {
 }
 .header__btn-menu {
   position: absolute;
-  left: 15px;
-  top: 100px;
-  background-color: transparent;
+  left: 0;
+  top: 98px;
+  right: 0;
+  width: 100%;
+  background-color: #2b313b;
   border: 0;
   color: #fff;
   font-size: 2.5rem;
@@ -707,7 +709,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: 155px;
+  top: 146px;
   display: none;
 }
 .header__menu__item,
@@ -789,6 +791,7 @@ img {
   }
 }
 .main {
+  margin-top: 48px;
   padding-top: 0px;
 }
 .main__slider {
@@ -954,6 +957,9 @@ img {
   color: #fff;
 }
 @media screen and (min-width: 768px) {
+  .main {
+    margin-top: 0;
+  }
   .main__slider__slide {
     height: 423px;
   }
